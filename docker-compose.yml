@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  paddlehub:
+    image: lianshufeng/paddlehub
+    # volumes:
+      # - "./log:/infer/log"
+      # - "./inference_model:/infer/inference_model"
+    ports:
+      - "9999:8888"
+    container_name: paddlehub
+    restart: always
