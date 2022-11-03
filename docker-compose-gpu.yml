@@ -3,13 +3,16 @@ version: "3"
 services:
   paddlehub:
     image: lianshufeng/paddlehub:gpu
-    # volumes:
-      # - "./log:/infer/log"
-      # - "./inference_model:/infer/inference_model"
+    volumes:
+      - "./work:/work"
+      - "./pip.conf:/root/.pip/pip.conf"
+      - "./cache/paddlehub:/root/.paddlehub"
+      - "./cache/paddlenlp:/root/.paddlenlp"
+      - "./cache/python/dist-packages:/usr/local/lib/python3.7/dist-packages"
     ports:
       - "9999:8888"
     container_name: paddlehub
-    restart: always
+    # restart: always
     deploy:
       resources:
         reservations:

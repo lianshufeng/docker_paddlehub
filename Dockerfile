@@ -7,6 +7,7 @@ Add ./ /docker
 # 安装依赖 (cpu)
 RUN pip install -r /docker/requirements.txt
 RUN pip install --upgrade paddlehub
+RUN bash /docker/script/install.sh
 
 # 工作目录
 WORKDIR /work
