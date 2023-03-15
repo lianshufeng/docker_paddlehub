@@ -6,5 +6,5 @@ pip install soundfile
 
 
 # PaddleSpeech
-cd  /tmp ; git clone https://github.com/paddlepaddle/PaddleSpeech ; cd PaddleSpeech ; pip install -e .  ; rm -rf /tmp/PaddleSpeech
+#cd  /tmp ; git clone https://github.com/paddlepaddle/PaddleSpeech ; cd PaddleSpeech ; pip install -e .  ; rm -rf /tmp/PaddleSpeech
 
