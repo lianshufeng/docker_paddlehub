@@ -1,4 +1,4 @@
-FROM paddlepaddle/paddle:2.3.2
+FROM paddlepaddle/paddle:2.4.2
 MAINTAINER lianshufeng <251708339@qq.com>
 
 # 添加 依赖

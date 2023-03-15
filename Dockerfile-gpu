@@ -1,4 +1,4 @@
-FROM paddlepaddle/paddle:2.3.2-gpu-cuda11.2-cudnn8
+FROM paddlepaddle/paddle:2.4.2-gpu-cuda11.7-cudnn8.4-trt8.4
 MAINTAINER lianshufeng <251708339@qq.com>
 
 # 添加 依赖
